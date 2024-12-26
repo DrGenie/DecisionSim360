@@ -1,0 +1,128 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+header p {
+    color: #666;
+}
+
+.scenario {
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+.scenario h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+.scenario p {
+    font-size: 1em;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 30px;
+}
+
+#result h2 {
+    color: #333;
+}
+
+#comparison {
+    margin-top: 20px;
+}
+
+#comparison table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#comparison th, #comparison td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#comparison th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#comparison tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#comparison tr:hover {
+    background-color: #f1f1f1;
+}
+
+#result button {
+    width: auto;
+    margin-top: 20px;
+    background-color: #007bff;
+}
+
+#result button:hover {
+    background-color: #0056b3;
+}
