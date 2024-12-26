@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision-Making Simulation Tool</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Decision-Making Simulation Tool</h1>
+            <p>Compare your decisions with rational choices based on expected utility.</p>
+        </header>
+        
+        <main>
+            <form id="decisionForm">
+                <!-- Scenario 1: Small Stakes -->
+                <section class="scenario" id="scenario1">
+                    <h2>Scenario 1: Small Stakes</h2>
+                    <p>You are offered a gamble with a 50% chance to win $10 and a 50% chance to win nothing.</p>
+                    <label>
+                        <input type="radio" name="decision1" value="accept" required>
+                        Accept the gamble
+                    </label>
+                    <label>
+                        <input type="radio" name="decision1" value="reject">
+                        Reject the gamble
+                    </label>
+                </section>
+
+                <!-- Scenario 2: Medium Stakes -->
+                <section class="scenario" id="scenario2">
+                    <h2>Scenario 2: Medium Stakes</h2>
+                    <p>You are offered a gamble with a 50% chance to win $50 and a 50% chance to win nothing.</p>
+                    <label>
+                        <input type="radio" name="decision2" value="accept" required>
+                        Accept the gamble
+                    </label>
+                    <label>
+                        <input type="radio" name="decision2" value="reject">
+                        Reject the gamble
+                    </label>
+                </section>
+
+                <!-- Scenario 3: High Stakes -->
+                <section class="scenario" id="scenario3">
+                    <h2>Scenario 3: High Stakes</h2>
+                    <p>You are offered a gamble with a 50% chance to win $100 and a 50% chance to win nothing.</p>
+                    <label>
+                        <input type="radio" name="decision3" value="accept" required>
+                        Accept the gamble
+                    </label>
+                    <label>
+                        <input type="radio" name="decision3" value="reject">
+                        Reject the gamble
+                    </label>
+                </section>
+
+                <!-- Submit Button -->
+                <button type="submit">Calculate Probability</button>
+            </form>
+
+            <!-- Result Section -->
+            <section id="result" class="hidden">
+                <h2>Your Decisions vs. Rational Choices</h2>
+                <div id="comparison">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+                <button onclick="resetForm()">Reset</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
